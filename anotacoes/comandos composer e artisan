@@ -1,0 +1,11 @@
+//Cria um novo projeto
+composer create-project laravel/lumen --prefer-dist
+
+//Define a classe modelo e a classe de migração
+php artisan make:migration create_articles_table --create=articles
+
+//Realiza a migração/cria as tabelas de database/migrations
+php artisan migrate
+
+//habilita o servidor
+php -S localhost:8000 -t public
